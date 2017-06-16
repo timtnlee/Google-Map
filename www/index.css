@@ -124,11 +124,15 @@ body {
     width: 100%;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 530px) {
     #mapInput {
-        width: 100vw;
+        width: 96vw;
     }
     #infoPanel {
         width: 100vw;
+    }
+    #inputArea {
+    left: 2vw;
+    top: 5px;
     }
 }
