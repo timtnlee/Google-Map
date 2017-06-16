@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+}
+
+#map {
+    width: 100vw;
+    height: 100vh;
+}
+
+#mapInput {
+    max-width: 400px;
+    width: 90vw;
+}
+
+#infoPanel {
+    overflow-y: scroll;
+    position: absolute;
+    left: -420px;
+    top: 0;
+    padding:50px 10px 10px 10px;
+    background-color: white;
+    max-width: 420px;
+    width: 90vw;
+    height: 100vh;
+    opacity: .92;
+    z-index: 2;
+    background-color: lightskyblue;
+}
+
+#inputArea {
+    position: fixed;
+    left: 10px;
+    top: 5px;
+    z-index: 3;
+}
+#backBtn{
+    cursor: pointer;
+    display: none;
+    margin: 5px;
+    color: white;
+    font-size: 20px;
+}
+.inner-addon {
+    position: relative;
+}
+
+.inner-addon span {
+    position: absolute;
+    right: 2px;
+    top: 5px;
+    font-size: 18px;
+    color: lightgray;
+}
+
+.inner-addon i {
+    cursor: pointer;
+    margin: 0px 5px 0px 5px;
+}
+
+.inner-addon i:hover {
+    color: black;
+}
+
+.placeTag{
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 1px solid #0080FF;
+    border-right: 1px solid #0080FF;
+    height: 100px;
+    padding: 1px;
+}
+.placePic{
+    background-color: #F0F0F0;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+}
+.placePic img{
+    height: 100%;
+}
+.placeName{
+    display: inline-block;
+    height: 100px;
+    padding: 40px 10px 10px 10px;
+    position: absolute;
+    left: 100px;
+}
+.detail{
+    padding: 5px;
+    background-color: white;
+    border-bottom: 1px solid #0080FF;
+    border-right: 1px solid #0080FF;
+}
+.detail_img img{
+    width: 100%;
+}
+/* .inner-addon .glyphicon-remove{
+	cursor: pointer;
+  position: absolute;
+  right: 2px;
+  padding: 10px;
+  pointer-events: none;
+}
+.inner-addon .glyphicon-search{
+	cursor: pointer;
+  position: absolute;
+  right: 5px;
+  padding: 10px;
+  pointer-events: none;
+} */

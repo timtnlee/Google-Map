@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
-        <title>Blank App</title>
-    </head>
-    <body>
-        <script type="text/javascript" src="cordova.js"></script>
-    </body>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Gogle Map</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="index.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?region=cn&language=zh-TW&key=AIzaSyCdVoiikIt7QWJ2Ea6M2JQ2Nu0suzM5P8A&libraries=places&callback=initMap"></script>
+    <div class="container">
+    <div id='map'></div>
+    <div class="inner-addon" id="inputArea">
+        <input type="" name="" id='mapInput' class="form-control" placeholder="查詢地點">
+        <span>
+        	<i class="glyphicon glyphicon-search"></i>
+        	|
+        	<i class="glyphicon glyphicon-remove"></i>
+        </span>        
+    </div>
+    	<div id='infoPanel'>
+            <div id='backBtn'>
+                <span class="glyphicon glyphicon-triangle-left"></span>返回
+            </div>
+            <div id='infoList'></div>            
+            <div id='infoDetail'></div>            
+    		
+    	</div>
+    </div>
+</body>
+
 </html>
