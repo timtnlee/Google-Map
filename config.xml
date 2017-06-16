@@ -9,4 +9,5 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    	<gap:plugin name="cordova-plugin-whitelist" version="1.3.2" source="npm" />
 </widget>
