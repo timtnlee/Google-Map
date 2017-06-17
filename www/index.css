@@ -142,6 +142,7 @@ body {
         top: 5px;
     }
     .placeName {
+        padding: 8px 10px 10px 10px;
         font-size: 14px;
     }
     .placeName small{
