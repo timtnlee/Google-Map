@@ -41,7 +41,7 @@ body {
     height: 100vh;
     opacity: .92;
     z-index: 2;
-    background-color: lightskyblue;
+    background-color: #2894FF;
 }
 
 #inputArea {
@@ -52,11 +52,12 @@ body {
 }
 
 #backBtn {
+    background-color: white;
     cursor: pointer;
     display: none;
-    margin: 5px;
-    color: white;
+    color: #2894FF;
     font-size: 20px;
+    border-bottom: 1px solid #2894FF;
 }
 
 .inner-addon {
@@ -108,9 +109,13 @@ body {
 .placeName {
     display: inline-block;
     height: 100px;
-    padding: 40px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
     position: absolute;
     left: 100px;
+}
+
+.placeName small {
+    color: gray;
 }
 
 .detail {
@@ -130,9 +135,10 @@ body {
     }
     #infoPanel {
         width: 100vw;
+        padding-bottom: 50px;
     }
     #inputArea {
-    left: 2vw;
-    top: 5px;
+        left: 2vw;
+        top: 5px;
     }
 }
