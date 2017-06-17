@@ -74,7 +74,7 @@ function _placeList(places) { //list multi places simple info
         if (place.photos)
             src = place.photos[0].getUrl({ 'maxWidth': 200, 'maxHeight': 200 })
         if (place.rating)
-            rate = '評分 : ' + place.rating
+            rate = '<small>評分 : ' + place.rating+'</small>'
         if (place.formatted_address)
             vicinity = '<small>地址 : ' + place.formatted_address + '</small>'
         $('#infoList').append('<p class="placeTag">' + '<span class="placePic"><img src="' + src + '"></span>' + '<span class="placeName">' + place.name + '<br>' + rate + '<br>' + vicinity + '</span></p>')
