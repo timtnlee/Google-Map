@@ -1,4 +1,4 @@
-# A Blank PhoneGap App
+# A PhoneGap App+Google map api
 
 ## Usage
 
