@@ -33,6 +33,7 @@ function initMap() {
         searchBox.setBounds(map.getBounds())
     })
     searchBox.addListener('places_changed', function() {
+        "use strict"
         let places = searchBox.getPlaces()
         searchConsole(places)
     })
@@ -43,6 +44,7 @@ function initMap() {
         _panelMove('close')
     })
     $('.glyphicon-search').on('click', function() {
+        "use strict"
         let input = document.getElementById('mapInput')
         google.maps.event.trigger(input, 'focus')
         google.maps.event.trigger(input, 'keydown', { keyCode: 13 });
@@ -66,6 +68,7 @@ function searchConsole(places) {
 function _placeList(places) { //list multi places simple info
 
     places.forEach(function(place) {
+        "use strict"
         let src = 'red-dot.png',
             rate = '<small>無評分</small>',
             vicinity = ''
@@ -88,6 +91,7 @@ function _placeList(places) { //list multi places simple info
 }
 
 function _placeDetail(places) { //focus one place's info    
+    "use strict"
     let id = places.place_id,
         photos = [],
         open = ['無營業時間'],
@@ -170,6 +174,7 @@ function _panelMove(step) { //control panel
 }
 
 function createMarker(place) {
+    "use strict"
     let mark = new google.maps.Marker({
             map: map,
             position: place.geometry.location,
@@ -210,6 +215,7 @@ function _genBounds(place) {
 }
 
 function _openingHour(opening_hours) {
+    "use strict"
     let openInfo = [],
         dayChar = function(day) {
             let days = [0, 1, 2, 3, 4, 5, 6],
