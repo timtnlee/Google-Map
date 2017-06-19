@@ -191,7 +191,7 @@ function createMarker(place) {
         _placeDetail(place)
     })
     markers.push(mark)
-    var openWindow = () => {
+    var openWindow = function(){
         $.map(infowindows, function(info) {
             info.close()
         })
